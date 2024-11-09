@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-5xl mx-auto py-8">
+  <div class="max-w-5xl mx-auto py-8 px-4">
     <!-- Section Title -->
-    <h2 class="text-2xl font-semibold mb-6 "style="padding-left: 0px;">
+    <h2 class="text-2xl font-semibold mb-6  pl-2 ">
       More Courses by <span class="text-purple-600">Learoy Tonight</span>
     </h2>
 

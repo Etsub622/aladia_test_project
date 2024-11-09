@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto py-8" style="padding-left: 90px;">
+  <div class="max-w-4xl mx-auto py-8 p1-64">
     <!-- Main Rating Header -->
     <div class="text-center mb-8">
       <div class="text-2xl font-semibold flex justify-center items-center">
@@ -9,31 +9,32 @@
     </div>
 
     <!-- Reviews List -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 p1-24" >
-      <!-- Review Section -->
-      <div v-for="review in reviews" :key="review.id">
-        <div class="flex items-center mb-2">
-          <div class="bg-gray-300 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold">
-            {{ review.initials }}
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <!-- Review Card -->
+      <div v-for="review in reviews" :key="review.id" class="bg-white p-6 border-t border-b border-gray-300">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center">
+            <div class="bg-gray-300 w-10 h-10 flex items-center justify-center text-white font-bold">
+              {{ review.initials }}
+            </div>
+            <div class="ml-4">
+              <h3 class="font-semibold text-gray-700">{{ review.name }}</h3>
+              <p class="text-sm text-gray-500">{{ review.date }}</p>
+            </div>
           </div>
-          <div class="ml-3">
-            <h3 class="font-semibold text-gray-800">{{ review.name }}</h3>
-            <p class="text-sm text-gray-500">{{ review.date }}</p>
-          </div>
-          <div class="ml-auto cursor-pointer text-gray-400">
-            <!-- Three dots icon -->
+          <div class="text-gray-400 text-lg">
+            <!-- Three vertically aligned dots at the right end -->
             <span>⋮</span>
           </div>
         </div>
-        <div class="flex items-center text-yellow-500 mb-2">
+        <div class="flex items-center text-yellow-500 mb-4">
           <span v-for="star in review.stars" :key="star" class="mr-1">⭐</span>
         </div>
-        <!-- Review Text with line breaks matching the provided image -->
-        <p class="text-gray-700 leading-relaxed whitespace-pre-line">{{ review.text }}</p>
-        <div class="flex space-x-4 text-gray-500 text-sm mt-3">
+        <p class="text-gray-700 mb-4">{{ review.text }}</p>
+        <div class="flex space-x-4 text-gray-500 text-sm">
+          <span>Helpful?</span>
           <button class="flex items-center space-x-1">
             <span>👍</span>
-            <span>Helpful?</span>
           </button>
           <button class="flex items-center space-x-1">
             <span>👎</span>
@@ -55,7 +56,7 @@ export default {
           name: "Michael W.",
           date: "2 weeks ago",
           stars: Array(4).fill(1),
-          text: "It is a good start, and a good source of\ninformation to prepare yourself for the real\nencounter that changes per every interaction.",
+          text: "It is a good start, and a good source of information to prepare yourself for the real encounter that changes per every interaction.",
         },
         {
           id: 2,
@@ -63,7 +64,7 @@ export default {
           name: "Christina B.",
           date: "2 weeks ago",
           stars: Array(3).fill(1),
-          text: "Some of the videos are photo shows and\nduring those I found it difficult to concentrate\non the audio information.",
+          text: "Some of the videos are photo shows and during those I found it difficult to concentrate on the audio information.",
         },
         {
           id: 3,
@@ -71,7 +72,7 @@ export default {
           name: "Philippe G.",
           date: "3 weeks ago",
           stars: Array(4).fill(1),
-          text: "Not the first course on how to understand the\nneeds of a customer but a lot of updated\ninsight in relations with the new customers,\nthe tools at our disposal and a fresh reminder\nhow to get it done.",
+          text: "Not the first course on how to understand the needs of a customer but a lot of updated insight in relations with the new customers, the tools at our disposal and a fresh reminder how to get it done.",
         },
         {
           id: 4,
@@ -79,14 +80,10 @@ export default {
           name: "Udemy User",
           date: "1 month ago",
           stars: Array(4).fill(1),
-          text: "How to build & satisfy team information\nprovided is good. How to improve customer\nsatisfaction is also useful.",
+          text: "How to build & satisfy team information provided is good. How to improve customer satisfaction is also useful.",
         },
       ],
     };
   },
 };
 </script>
-
-<style scoped>
-/* Custom styles if needed */
-</style>
