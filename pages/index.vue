@@ -7,9 +7,10 @@
     <Instructor />
     <Review />
     <MoreCourses />
+    <Footer1 />
     <Footer />
     <Footer2 />
-    <Footer1 />
+    
   </div>
 </template>
 

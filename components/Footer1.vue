@@ -1,19 +1,23 @@
 <template>
   <div class="bg-gray-900 text-white py-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0">
-      <div class="flex flex-col items-center w-full">
-        <div class="flex flex-col sm:flex-row justify-between items-center w-full mb-4">
-          <h1 class="text-4xl font-bold text-center sm:text-left flex-grow">
-            Top companies choose Udemy Business to build in-demand career skills.
-          </h1>
-          <div class="flex justify-center items-center space-x-8 mt-4 sm:mt-0 flex-shrink-0"> <!-- Ensure all logos are in one row -->
-            <div v-for="logo in logos" :key="logo.name" class="flex justify-center">
-              <img :src="logo.src" :alt="logo.name" class="h-8" />
-            </div>
+    <div class="w-full mx-auto px-6"> <!-- Padding on both sides -->
+      <!-- Full width flex container -->
+      <div class="flex justify-between items-center w-full mb-6"> <!-- Added margin-bottom for spacing -->
+        <!-- Text on the left with smaller font size -->
+        <h1 class="text-xl sm:text-2xl font-bold text-left">
+          Top companies choose Udemy Business to build in-demand career skills.
+        </h1>
+
+        <!-- Logos on the right -->
+        <div class="flex justify-end items-center space-x-8">
+          <div v-for="logo in logos" :key="logo.name" class="flex justify-center">
+            <img :src="logo.src" :alt="logo.name" class="h-8" />
           </div>
         </div>
-        <div class="border-b-2 border-white w-full"></div> <!-- Added thin white line below -->
       </div>
+
+      <!-- Thinner white line with added space above it -->
+      <div class="border-b border-white w-full mt-4"></div> <!-- Decreased thickness -->
     </div>
   </div>
 </template>

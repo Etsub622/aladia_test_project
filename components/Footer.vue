@@ -1,6 +1,9 @@
 <template>
   <div class="bg-gray-900 text-white py-12">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-8 py-8 pl-5"> <!-- Added padding-left of 20 pixels -->
+     
+      <h2 class="text-2xl font-bold mb-8 ">Explore top skills and certifications</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-8 py-8 pl-5"> 
+    
       <div class="space-y-2">
         <h3 class="text-lg font-bold text-xl">Certifications by Issuer</h3> <!-- Increased text size -->
         <ul class="space-y-1">
