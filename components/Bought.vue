@@ -4,9 +4,9 @@ import { ref, computed } from 'vue';
 
 // Array of students with their details
 const students = [
-  { id: 1, imageSrc: "../public/ud.png", name: "Customer Success | How to Understant  Your Customers", rating: "4.5", reviews: "34,132", price: "$44.99", hours: "1 total hours", updateDate: "12/2017" },
-  { id: 2, imageSrc: "../public/ud1.png", name: "Customer Service Success: Working with Upset Customers", rating: "4.5", reviews: "3,335", price: "$49.99", hours: "2 hours", updateDate: "3/2023" },
-  { id: 3, imageSrc: "../public/ud2.png", name: "The Customer How to Manage CustomerFeedback (BITE SIZE)", rating: "4.5", reviews: "40,983", price: "$89", hours: "1 total hours", updateDate: "10/2015" },
+  { id: 1, imageSrc: "../public/ud.jpg", name: "Customer Success | How to Understant  Your Customers", rating: "4.5", reviews: "34,132", price: "$44.99", hours: "1 total hours", updateDate: "12/2017" },
+  { id: 2, imageSrc: "../public/ud3.jpg", name: "Customer Service Success: Working with Upset Customers", rating: "4.5", reviews: "3,335", price: "$49.99", hours: "2 hours", updateDate: "3/2023" },
+  { id: 3, imageSrc: "../public/ud2.jpg", name: "The Customer How to Manage CustomerFeedback (BITE SIZE)", rating: "4.5", reviews: "40,983", price: "$89", hours: "1 total hours", updateDate: "10/2015" },
   { id: 4, imageSrc: "../public/course1.png", name: "Customer Service Excellence- from customers to operatores", rating: "4.4", reviews: "200,300", price: "$89", hours: "4 hours", updateDate: "2/2021" },
   { id: 5, imageSrc: "../public/course2.png", name: "Marketing Basics", rating: "4.5", reviews: "180,250", price: "$89", hours: "6.5 total hours", updateDate: "2/2024" },
   { id: 6, imageSrc: "../public/students.png", name: "Data Analytics for Beginners", rating: "4.8", reviews: "300,000", price: "$89", hours: "1.5 total hours", updateDate: "4/2022" },
