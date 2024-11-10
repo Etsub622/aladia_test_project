@@ -1,57 +1,58 @@
-<template>
-  <div class="container mx-auto py-8" style="padding-left: 90px;">
-  <!-- Text Column -->
-      <div class="flex flex-col space-y-4">
-        <div>
-          <h2 class="text-2xl font-bold">Learoy Tonight</h2>
-          <p class="text-gray-600">Bite Size Learning</p>
-        </div>
-    <div class="flex items-start mb-6">
-      <!-- Image Section -->
-      <div class="w-20 h-20 mr-6 flex-shrink-0">
-        <img src="https://i.imgur.com/6Qd0lX0.png" alt="Learoy Tonight" class="w-full h-full object-cover rounded-full" />
-      </div>
+<script setup>
+import { Icon } from "@iconify/vue";
+import { ref } from 'vue';
 
-      
-        
-        <!-- Stats Section -->
-        <div class="flex flex-col space-y-2">
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-star text-yellow-500"></i>
-            <span class="text-gray-800 font-bold">4.5</span>
-            <span class="text-gray-600">Instructor Rating</span>
-          </div>
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-comments text-gray-600"></i>
-            <span class="text-gray-800 font-bold">110,722</span>
-            <span class="text-gray-600">Reviews</span>
-          </div>
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-graduation-cap text-gray-600"></i>
-            <span class="text-gray-800 font-bold">220,841</span>
-            <span class="text-gray-600">Students</span>
-          </div>
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-book text-gray-600"></i>
-            <span class="text-gray-800 font-bold">13</span>
-            <span class="text-gray-600">Courses</span>
-          </div>
+// Toggle variable for showing full text
+const showFullText = ref(false);
+</script>
+
+<template>
+  <div class="w-[56vw] ml-20 py-4 mt-10 font-Zeitung flex flex-col gap-2">
+    <h1 class="text-[17pt] font-extrabold">Instructor</h1>
+    <div>
+      <a href="" class="text-[#4c26b4] font-extrabold text-[14pt] underline">
+        Laura Pickel</a
+      >
+      <p class="text-[13pt] text-slate-700">
+        Learning Experience Designer at Lyft
+      </p>
+    </div>
+    <div class="flex gap-5 mt-2">
+      <img src="../public/profile.png" class="h-28 w-28" />
+      <div class="flex flex-col gap-2 ">
+        <div class="flex items-center gap-3">
+            <Icon icon="ri:star-s-fill" />
+          <p>4.4 Instructor Rating</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <Icon icon="iconamoon:certificate-badge-fill"></Icon>
+          <p>54,719 Reviews</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <Icon icon="material-symbols:person-rounded"></Icon>
+          <p>109,491 Students</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <Icon icon="material-symbols:play-circle"></Icon>
+          <p>3 Courses</p>
         </div>
       </div>
     </div>
-
-    <!-- Description Texts -->
-    <p class="text-gray-700 mb-6">
-      Learoy believes that an investment in education is an investment in your future business. Learoy has a driving
-      passion for outcomes, business return and creating engaging learning experiences.
-    </p>
-    <p class="text-gray-700 mb-6">
-      Learoy Tonight is essentially bite-size learning, it's all about learning that little bit now and implementing those
-      new skills and knowledge in the workplace tomorrow.
-    </p>
-    <p class="text-gray-700 mb-6">
-      Learoy isn't your typical education company, it's a forward-thinking, digital business that's leading the way.
-      We've done the research and we're delivering results through education. You'll see.
-    </p>
+    <div>
+      <em>3 parts design nerd, 4 parts passionate educator, 2 parts biker extraordinaire</em>
+      <p>
+        <span v-if="!showFullText">
+          Laura is a Learning Experience Designer at Lyft and an Ideo U teaching team lead. In past lives, she's been a User Experience Designer at SAP, taught at the Stanford d.school, and has conducted hundreds of design thinking workshops.
+        </span>
+        <span v-else>
+          Laura is a Learning Experience Designer at Lyft and an Ideo U teaching team lead. In past lives, she's been a User Experience Designer at SAP, taught at the Stanford d.school, and has conducted hundreds of design thinking workshops.
+          <br><br>
+          When she's not teaching people about using game mechanics for learning or interview techniques for empathy work, Laura can be found competing in triathlons, riding hundreds of miles on her bike for fun, or hunting for the best gluten-free bakeries around.
+        </span>
+      </p>
+      <button @click="showFullText = !showFullText" class="text-[#4c26b4] font-bold mt-2">
+        {{ showFullText ? 'See Less' : 'See More' }}
+      </button>
+    </div>
   </div>
 </template>
