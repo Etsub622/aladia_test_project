@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-8 explore-related-topics" style="padding-left: 90px;">
+  <div class="container mx-auto py-4 explore-related-topics" style="padding-left: 240px;">
  
     <h2 class="text-2xl font-semibold mb-4">Explore Related Topics</h2>
     <div class="topics flex space-x-2"> <!-- Flex layout with small horizontal spacing -->

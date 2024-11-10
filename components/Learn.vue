@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-8 flex " style="padding-left: 90px;">
+  <div class="container mx-auto py-8 flex " style="padding-left: 240px;">
     <div class="border-2 border-gray-200 rounded-lg p-6 w-full max-w-4xl"> <!-- Adjusted width to be longer -->
       <h2 class="text-2xl font-bold mb-6">What you will learn</h2>
       <ul class="list-none space-y-5">

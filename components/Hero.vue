@@ -24,8 +24,8 @@ onUnmounted(() => {
     <div
     :class="{
       'fixed top-[20px]': isScrolled,
-      'fixed top-[110px]': !isScrolled }"
-    class="right-[80px] z-50 w-[28%] h-screen bg-white transition-all"
+      'fixed top-[130px]': !isScrolled }"
+    class="right-[250px] z-50 w-[23%] h-screen bg-white transition-all"
   >
   
     <div>
@@ -33,44 +33,45 @@ onUnmounted(() => {
     </div>
   </div>
   <div
-    class=" bg-[#161515] mt-[70px] w-screen text-white flex flex-col gap-7 py-7 pl-20 font-Zeitung">
-    <div class="text-[10pt] font-extrabold flex items-center space-x-2 text-[#d2cff6]">
+    class=" bg-[#161515] mt-[90px] w-screen text-white flex flex-col gap- py-8 pl-72
+
+     font-Zeitung">
+    <div class="text-[14pt] font-extrabold flex items-center space-x-2 text-[#d2cff6]">
       <a href="#">Business</a>
       <Icon icon="mdi:chevron-right" width="16" class="text-white" />
-      <a href="#">Business Strategy</a>
+      <a href="#">Management</a>
       <Icon icon="mdi:chevron-right" width="16" class="text-white" />
-      <a href="#">Design Thinking</a>
+      <a href="#">Customor Service</a>
     </div>
 
     <div class="flex flex-col justify-center gap-2">
-      <h1 class="text-[22pt] font-extrabold w-[50%]">Design Thinking for Beginners: Develop Innovative Ideas</h1>
-      <h2 class="font-extrabold w-[60%]">
-        Apply the five-step design thinking process to identify and creatively
-        solve problems using a human-centered approach.
+      <h1 class="text-[27pt] font-extrabold w-[50%]">The Customer: How to Understand Their<br> Needs (BITE SIZE)</h1>
+      <h2 class="font-semibold w-[70%] text-[15pt]">
+        Be guided on understanding the modern customer and how their needs have changed <br> over time.
       </h2>
     </div>
     <div class="flex flex-col gap-3">
       <div class="flex gap-2 items-center">
         <div class="flex items-center font-normal text-[11pt]">
-              <span class="font-extrabold text-yellow-400">4.4</span>
+              <span class="font-extrabold text-yellow-400 text-[15pt]">4.5</span>
               <Icon icon="ri:star-s-fill" class="text-yellow-500" />
               <Icon icon="ri:star-s-fill" class="text-yellow-500" />
               <Icon icon="ri:star-s-fill" class="text-yellow-500" />
               <Icon icon="ri:star-s-fill" class="text-yellow-500" />
-              <Icon icon="ri:star-s-fill" class="text-yellow-500" />
+              <Icon icon="ri:star-s-fill" class="text-yellow-400" />
             </div>
-        <a href="" class="text-[#cecaff] font-extrabold text-[10pt] underline">(53,724 ratings)</a>
-        <p class="text-[10pt] font-extrabold">105,243 students</p>
+        <a href="" class="text-[#cecaff] font-extrabold text-[15pt] underline">(42,375 ratings)</a>
+        <p class="text-[15t] font-extrabold">77,425 students</p>
       </div>
-      <p class="text-[10pt]">Created by <a href="" class="text-[#cecaff] font-extrabold text-[10pt] underline">Laura Pickel</a></p>
+      <p class="text-[12pt]">Created by <a href="" class="text-[#cecaff] font-extrabold text-[10pt] underline">Learoy Tonight</a></p>
       <div class="flex space-x-2  text-[9pt] font-bold items-center">
         <Icon icon="material-symbols-light:release-alert-rounded" width="18" class="text-white" />
-        <p>Last updated 1/2021</p>
+        <p class="text-[13pt]">Last updated 3/2016</p>
         <Icon icon="mynaui:globe" width="18" class="text-white" />
-        <p>English</p>
+        <p class="text-[13pt]">English</p>
         <Icon icon="ic:outline-keyboard" width="18" class="text-white" />
 
-        <p> English [CC], Arabic [Auto], <a href="" class="text-[#cecaff] underline">13 more</a></p>
+        <p class="text-[13pt]"> English [CC], Dutch [Auto], <a href="" class="text-[#cecaff] underline">11 more</a></p>
       </div>
     </div>
   </div>

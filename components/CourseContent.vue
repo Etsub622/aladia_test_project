@@ -1,27 +1,24 @@
 <template>
-    <div class="  p-14 mr-80 ml-52">
+    <div class="  p-8 mr-80 ml-52 px-270">
         <h6 class="font-bold">This course includes:</h6>
         <div class="flex gap-8">
             <div>
                 <p>
 
-                    1.5 hours on-demand video
+                    1 hour on-demand video
                 </p>
-                <p>2 practice tests</p>
+                <p>2 Access on mobile and TV</p>
             </div>
             <div>
-                <p>
-                   
-                    Access on mobile and TV
-                </p>
+               
                 <p>
                     <Icon name="hugeicons:award-01" /> Certificate of completion
                 </p>
             </div>
         </div>
 
-        <div>
-            <h4 class="font-bold text-xl">Course content</h4>
+        <div pt-3>
+            <h4 class="font-bold text-xl mt-9 mb-3">Course content</h4>
         </div>
 
         <div class="flex justify-between">
@@ -36,9 +33,9 @@
             </div>
         </div>
 
-        <div class="border pb-3 pr-2">
+        <div class="border pb-8 pr-2">
             <transition name="fade">
-                <div class="mt-4">
+                <div class="mt-6">
                     <div v-for="(section, index) in (showAll ? sections : limitedSections)" :key="index"
                         class="section">
                         <div class="collapsible cursor-pointer p-2 mt-2 rounded flex justify-between pr-6 bg-gray-0"
@@ -77,41 +74,80 @@ export default {
             showAll: false, // Controls if all sections are shown or only the first two
             sections: [
                 {
-                    title: 'Introduction to Product Management',
+                    title: 'Welcome to How to Understand Customer Needs',
                     contents: [
-                        { title: 'Lecture 1.1: Overview', duration: 330 }, // duration in seconds
-                        { title: 'Lecture 1.2: Basics', duration: 620 },
-                        { title: 'Lecture 1.3: Getting Started', duration: 900 },
-                        { title: 'Lecture 1.4: First Steps', duration: 480 },
+                        { title: 'Welcome to How to Understand Customer Needs', duration: 330 }, // duration in seconds
+                       
                     ],
                     isActive: false,
                 },
                 {
-                    title: 'The Product Management Life Cycle',
+                    title: 'Customer Satisfaction',
                     contents: [
-                        { title: 'Lecture 2.1: Deep Dive', duration: 1200 },
-                        { title: 'Lecture 2.2: Advanced Techniques', duration: 900 },
-                        { title: 'Lecture 2.3: Optimization', duration: 1500 },
-                        { title: 'Lecture 2.4: Case Studies', duration: 600 },
-                        { title: 'Lecture 2.5: Conclusion', duration: 300 },
+                        { title: 'The Service Profit Chain', duration: 1200 },
+                        { title: 'The Relationship Between Employee and Customer Satisfaction', duration: 900 },
+                        
                     ],
                     isActive: false,
                 },
                 {
-                    title: 'The Product Management Life Cycle Phases',
+                    title: 'Internal and External Customers',
                     contents: [
-                        { title: 'Lecture 3.1: Summary', duration: 600 },
-                        { title: 'Lecture 3.2: Final Thoughts', duration: 720 },
-                        { title: 'Lecture 3.3: Q&A', duration: 420 },
+                        { title: 'A Focus on the Internal Customer', duration: 800 },
+                        { title: 'Identifying External Customer Needs', duration: 620 },
+                        { title: 'Why Employee Satisfaction is Key for Customer Satisfaction', duration: 420 },
+                        { title: 'A Quote from Mark Cuban', duration: 620 },
                     ],
                     isActive: false,
                 },
+
+                {
+                    title: 'The Modern Day Customer',
+                    contents: [
+                        { title: 'Identifying the Modern Day Customer', duration: 1200 },
+                        { title: 'Strategies for the Modern Day Customer', duration: 900 },
+                        { title: 'The Modern Shopper - Some Stats', duration: 420 },
+                        { title: 'Expectations of Our Customers', duration: 620 },
+                        { title: 'Why Exceed Customer Expectations', duration: 1200 },
+                        { title: 'Personalised Customer Experience', duration: 900 },
+                        { title: 'Rogue Wallet Gets it Right', duration: 420 },
+                        { title: 'Personalising for Your Customers', duration: 620 },
+                        { title: 'Buying Habits of Contemporary Customers', duration: 1200 },
+                        { title: 'The Link Between Decision Making and Emotions', duration: 900 },
+                        { title: 'Explore More', duration: 420 },
+
+
+
+                        
+                    ],
+                    isActive: false,
+                },
+                {
+                    title: 'What is Your Day Customer ?',
+                    contents: [
+                        { title: 'What is Your Day Customer ?', duration: 1200 },
+                   
+            
+                    ],
+                    isActive: false,
+                },
+                {
+                    title: 'Congratualtions! You now Know how to Understand Customer <br> Needs',
+                    contents: [
+                        { title: 'How to Understand Customer Needs', duration: 1200 },
+                   
+            
+                    ],
+                    isActive: false,
+                },
+                
+
             ],
         };
     },
     computed: {
         limitedSections() {
-            return this.sections.slice(0, 2);
+            return this.sections.slice(0, 6);
         },
         totalLectures() {
             return this.sections.reduce((total, section) => total + section.contents.length, 0);

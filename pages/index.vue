@@ -18,6 +18,7 @@ import CourseContent from '@/components/CourseContent.vue';
 import FrequentlyBought from '@/components/FrequentlyBought.vue';
 
 const hasScrolled = ref(false);
+const isScrolled = ref(false);
 
 const handleScroll = () => {
   if (window.scrollY > 50) {
@@ -25,7 +26,13 @@ const handleScroll = () => {
   } else {
     hasScrolled.value = false;
   }
-};
+
+  if (window.scrollY > 0) {
+    isScrolled.value = true;
+  } else {
+    isScrolled.value = false;
+  }
+}
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
@@ -37,10 +44,11 @@ onUnmounted(() => {
 </script>
 
 <template>
+ 
   <div class="flex flex-col">
-      <Header v-if="!hasScrolled" />
-    <ScrolledHeader v-else />
-
+   
+    <Header v-if="!hasScrolled" />
+    <HeaderScroll v-else />
     <Hero />
     <Learn />
     <Explore />

@@ -4,15 +4,15 @@ import { ref, computed } from 'vue';
 
 // Array of students with their details
 const students = [
-  { id: 1, imageSrc: "../public/students.png", name: "Design Thinking in 3 Steps", rating: "4.4", reviews: "126,180", price: "$89", hours: "1.5 total hours", updateDate: "6/2020" },
-  { id: 2, imageSrc: "../public/students.png", name: "Creative Problem Solving", rating: "4.6", reviews: "150,200", price: "$89", hours: "2 hours", updateDate: "8/2020" },
-  { id: 3, imageSrc: "../public/students.png", name: "Innovative Thinking Techniques", rating: "4.3", reviews: "100,150", price: "$89", hours: "3 hours", updateDate: "5/2020" },
-  { id: 4, imageSrc: "../public/students.png", name: "Business Strategy Mastery", rating: "4.7", reviews: "200,300", price: "$89", hours: "4 hours", updateDate: "7/2020" },
-  { id: 5, imageSrc: "../public/students.png", name: "Marketing Basics", rating: "4.5", reviews: "180,250", price: "$89", hours: "2.5 hours", updateDate: "9/2020" },
-  { id: 6, imageSrc: "../public/students.png", name: "Data Analytics for Beginners", rating: "4.8", reviews: "300,000", price: "$89", hours: "5 hours", updateDate: "10/2020" },
-  { id: 7, imageSrc: "../public/students.png", name: "Advanced Design Thinking", rating: "4.6", reviews: "220,500", price: "$89", hours: "3.5 hours", updateDate: "11/2020" },
-  { id: 8, imageSrc: "../public/students.png", name: "Leadership Development", rating: "4.9", reviews: "400,000", price: "$89", hours: "6 hours", updateDate: "12/2020" },
-  { id: 9, imageSrc: "../public/students.png", name: "Team Building Essentials", rating: "4.2", reviews: "75,000", price: "$89", hours: "1 hour", updateDate: "1/2021" }
+  { id: 1, imageSrc: "../public/ud.png", name: "Customer Success | How to Understant  Your Customers", rating: "4.5", reviews: "34,132", price: "$44.99", hours: "1 total hours", updateDate: "12/2017" },
+  { id: 2, imageSrc: "../public/ud1.png", name: "Customer Service Success: Working with Upset Customers", rating: "4.5", reviews: "3,335", price: "$49.99", hours: "2 hours", updateDate: "3/2023" },
+  { id: 3, imageSrc: "../public/ud2.png", name: "The Customer How to Manage CustomerFeedback (BITE SIZE)", rating: "4.5", reviews: "40,983", price: "$89", hours: "1 total hours", updateDate: "10/2015" },
+  { id: 4, imageSrc: "../public/course1.png", name: "Customer Service Excellence- from customers to operatores", rating: "4.4", reviews: "200,300", price: "$89", hours: "4 hours", updateDate: "2/2021" },
+  { id: 5, imageSrc: "../public/course2.png", name: "Marketing Basics", rating: "4.5", reviews: "180,250", price: "$89", hours: "6.5 total hours", updateDate: "2/2024" },
+  { id: 6, imageSrc: "../public/students.png", name: "Data Analytics for Beginners", rating: "4.8", reviews: "300,000", price: "$89", hours: "1.5 total hours", updateDate: "4/2022" },
+  { id: 7, imageSrc: "../public/students.png", name: "Customer Service Excellence", rating: "4.6", reviews: "220,500", price: "$89", hours: "3.5 total hours", updateDate: "11/2020" },
+  { id: 8, imageSrc: "../public/udemyLogo.png", name: "Customer Service Training:Dealing with <br> Difficult customers", rating: "4.9", reviews: "400,000", price: "$89", hours: "6 hours", updateDate: "12/2020" },
+  { id: 9, imageSrc: "../public/students.png", name: "Team Building Essentials", rating: "4.6", reviews: "50,000", price: "$89", hours: "2.5 total hour", updateDate: "1/2021" }
 ];
 
 const showMore = ref(false);
@@ -27,8 +27,8 @@ const toggleShowMore = () => {
 </script>
 
 <template>
-  <div class=" pl-20 mt-10 w-[62vw] font-Zeitung">
-    <h1 class="text-[20pt] font-extrabold">Students also bought</h1>
+  <div class=" pl-60 mt-10 w-[62vw] font-Zeitung">
+    <h1 class="text-[21pt] font-bold">Students also bought</h1>
     
     <div class="grid grid-cols-1 gap-4 w-[100%]">
       <div v-for="student in displayedStudents" :key="student.id" class="grid grid-cols-[1fr,4fr,1fr,1fr,1fr,1fr] gap-4 py-[5px] items-center w-full pb-3 border-b-[1.3px] border-gray-200">
@@ -67,7 +67,7 @@ const toggleShowMore = () => {
       </div>
     </div>
     
-    <button @click="toggleShowMore" class="mt-4 border-[1.32px]  border-black w-[100%] py-2 font-bold">
+    <button @click="toggleShowMore" class="mt-4 border-[1.32px]  border-black w-[100%] py-3 font-bold">
       {{ showMore ? "Show Less" : "Show More" }}
     </button>
   </div>

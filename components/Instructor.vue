@@ -1,58 +1,49 @@
 <script setup>
 import { Icon } from "@iconify/vue";
-import { ref } from 'vue';
-
-// Toggle variable for showing full text
-const showFullText = ref(false);
 </script>
 
 <template>
-  <div class="w-[56vw] ml-20 py-4 mt-10 font-Zeitung flex flex-col gap-2">
-    <h1 class="text-[17pt] font-extrabold">Instructor</h1>
+  <div class="w-[56vw] ml-20 py-4 mt-9 font-Zeitung flex flex-col gap-2 pl-32">
+    <h1 class="text-[18pt] font-extrabold">Instructor</h1>
     <div>
-      <a href="" class="text-[#4c26b4] font-extrabold text-[14pt] underline">
-        Laura Pickel</a
-      >
+      <a href="" class="text-[#4c26b4] font-bold text-[15pt] underline">
+        Learoy Tonight
+      </a>
       <p class="text-[13pt] text-slate-700">
-        Learning Experience Designer at Lyft
+        Bite Size Learning 
       </p>
     </div>
     <div class="flex gap-5 mt-2">
-      <img src="../public/profile.png" class="h-28 w-28" />
-      <div class="flex flex-col gap-2 ">
+      <img src="../public/Learoy.png" class="h-28 w-30 rounded-full" /> 
+      <div class="flex flex-col gap-2">
         <div class="flex items-center gap-3">
-            <Icon icon="ri:star-s-fill" />
-          <p>4.4 Instructor Rating</p>
+          <Icon icon="ri:star-s-fill" />
+          <p>4.5 Instructor Rating</p>
         </div>
         <div class="flex items-center gap-3">
           <Icon icon="iconamoon:certificate-badge-fill"></Icon>
-          <p>54,719 Reviews</p>
+          <p>110,722 Reviews</p>
         </div>
         <div class="flex items-center gap-3">
           <Icon icon="material-symbols:person-rounded"></Icon>
-          <p>109,491 Students</p>
+          <p>220,885 Students</p>
         </div>
         <div class="flex items-center gap-3">
           <Icon icon="material-symbols:play-circle"></Icon>
-          <p>3 Courses</p>
+          <p>13 Courses</p>
         </div>
       </div>
     </div>
     <div>
-      <em>3 parts design nerd, 4 parts passionate educator, 2 parts biker extraordinaire</em>
-      <p>
-        <span v-if="!showFullText">
-          Laura is a Learning Experience Designer at Lyft and an Ideo U teaching team lead. In past lives, she's been a User Experience Designer at SAP, taught at the Stanford d.school, and has conducted hundreds of design thinking workshops.
-        </span>
-        <span v-else>
-          Laura is a Learning Experience Designer at Lyft and an Ideo U teaching team lead. In past lives, she's been a User Experience Designer at SAP, taught at the Stanford d.school, and has conducted hundreds of design thinking workshops.
-          <br><br>
-          When she's not teaching people about using game mechanics for learning or interview techniques for empathy work, Laura can be found competing in triathlons, riding hundreds of miles on her bike for fun, or hunting for the best gluten-free bakeries around.
-        </span>
+      <p class="pr-6 text-[13pt]">
+        Learoy believes that an investment in education is an investment in your future business. Learoy has a driving
+        passion for outcomes, business return and creating engaging learning experiences.
+        Learoy Tonight is essentially bite size learning, it's all about learning that little bit now and implementing those
+        new skills and knowledge in the workplace tomorrow.
+        Learoy isn't your typical education company. It's a forward-thinking, digital business that's leading the way.
+        We've done the research and we're driving results through education. You'll see.
       </p>
-      <button @click="showFullText = !showFullText" class="text-[#4c26b4] font-bold mt-2">
-        {{ showFullText ? 'See Less' : 'See More' }}
-      </button>
     </div>
   </div>
 </template>
+

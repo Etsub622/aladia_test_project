@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-5xl mx-auto py-8 px-4">
+  <div class="max-w-5xl mx-auto py-8 px-0 pl-0 ml-48">
     <!-- Section Title -->
-    <h2 class="text-2xl font-semibold mb-6  pl-2 ">
+    <h2 class="text-2xl font-semibold mb-4  pl-0 ">
       More Courses by <span class="text-purple-600">Learoy Tonight</span>
     </h2>
 
@@ -36,7 +36,7 @@
 
     <!-- Report Abuse Button -->
     <div class="text-center mt-8">
-  <button class="border border-black px-6 py-2 w-full text-gray-500 text-sm font-bold rounded hover:bg-gray-100">
+  <button class="border border-black px-6 py-2 w-full text-gray-500 text-sm font-extrbold rounded hover:bg-gray-100">
     Report abuse
   </button>
     </div>

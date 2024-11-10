@@ -4,10 +4,10 @@ import { ref, computed } from "vue";
 </script>
 
 <template>
-  <div class="w-[56vw] ml-20 py-4 mt-10 font-Zeitung">
+  <div class="w-[56vw] ml-20 py-4 mt-10 font-Zeitung "style="padding-left: 120px;">
     <div class="flex items-center">
       <Icon icon="ri:star-s-fill" width="24" class="text-yellow-800"></Icon>
-      <h1 class="text-[17pt] font-extrabold">4.4 course rating 54K ratings</h1>
+      <h1 class="text-[18pt] font-extrabold">4.5 course rating 42K ratings</h1>
     </div>
     <div class="flex items-center my-5">
       <div class="flex-grow h-px bg-slate-400"></div>
@@ -22,7 +22,7 @@ import { ref, computed } from "vue";
           <div class="flex gap-4">
             <div class="bg-black h-11 w-11 p-3 rounded-full"></div>
             <div>
-              <h1 class="font-extrabold text-[13pt]">Karen C.</h1>
+              <h1 class="font-extrabold text-[13pt]">Michael W.</h1>
               <div class="flex items-center font-normal text-[11pt]">
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
@@ -30,7 +30,7 @@ import { ref, computed } from "vue";
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
                 <span class="ml-1 font-bold text-[#747272] text-[10pt]"
-                  >2 days ago</span
+                  >2 weeks ago</span
                 >
               </div>
             </div>
@@ -40,9 +40,10 @@ import { ref, computed } from "vue";
           </div>
           <div>
             <p class="pr-6 text-[13pt]">
-              Informative as it provides guidance on transitioning from
-              identifying a problem, formulating possible solutions to
-              implementation and feedback.
+            
+              It is a good start, and a good source of 
+              information to prepare yourself for the real 
+              encounter that changes per every interaction.
             </p>
           </div>
           <div class="flex gap-5">
@@ -60,7 +61,7 @@ import { ref, computed } from "vue";
           <div class="flex gap-4">
             <div class="bg-black h-11 w-11 p-3 rounded-full"></div>
             <div>
-              <h1 class="font-extrabold text-[13pt]">John D.</h1>
+              <h1 class="font-extrabold text-[13pt]">Christian B.</h1>
               <div class="flex items-center font-normal text-[11pt]">
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
@@ -78,8 +79,9 @@ import { ref, computed } from "vue";
           </div>
           <div>
             <p class="pr-6 text-[13pt]">
-              This guide helped me understand the entire process from problem
-              identification to solution implementation. Great content!
+             Some of the videos are photo shows and
+              during those I found it diffucult to concentrate
+               on the audio information.
             </p>
           </div>
           <div class="flex gap-5">
@@ -91,11 +93,11 @@ import { ref, computed } from "vue";
           </div>
         </div>
 
-        <div class="h-[40vh] w-[48%] p-1 flex flex-col gap-5">
+        <div class="h-[40vh] w-[48%]  flex flex-col gap-5">
           <div class="flex gap-4">
             <div class="bg-black h-11 w-11 p-3 rounded-full"></div>
             <div>
-              <h1 class="font-extrabold text-[13pt]">Heather F.</h1>
+              <h1 class="font-extrabold text-[13pt]">Philippe G.</h1>
               <div class="flex items-center font-normal text-[11pt]">
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
@@ -103,7 +105,7 @@ import { ref, computed } from "vue";
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
                 <Icon icon="ri:star-s-fill" class="text-yellow-500" />
                 <span class="ml-1 font-bold text-[#747272] text-[10pt]"
-                  >5 days ago</span
+                  >3 weeks ago</span
                 >
               </div>
             </div>
@@ -113,8 +115,11 @@ import { ref, computed } from "vue";
           </div>
           <div>
             <p class="pr-6 text-[13pt]">
-              Very insightful. It offers a comprehensive approach to tackling
-              complex challenges in business.
+              Not the first course on how to understand the
+              needs of a customer but a lot of updated
+              insight in relations with the new customers,
+              the tools at our disposal and a fresh reminder
+              how to get it done.
             </p>
           </div>
           <div class="flex gap-5">
@@ -148,7 +153,9 @@ import { ref, computed } from "vue";
           </div>
           <div>
             <p class="pr-6 text-[13pt]">
-                I really wish I knew the questions I answered wrong. That is an important part of learning.
+                How to build & satisfy team information provided is
+                good.How to improve customer satisfaction is also
+                useful.
             </p>
           </div>
           <div class="flex gap-5">
